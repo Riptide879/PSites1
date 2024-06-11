@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="http://app.blackkitetech.com/Content/logo/logo-small.png">
+    <title>Black Kite | Just One Step</title>
+
+    <link href="./BlackKite_Files/login.css" rel="stylesheet">
+    <link href="./BlackKite_Files/materialdesignicons.css" rel="stylesheet">
+    <script src="./BlackKite_Files/cookie.js"></script>
+</head>
+
+<body class="BK-Login">
+    <div class="container-fluid d-flex flex-column vh-100">
+        <div class="row px-3 py-4 px-md-5 py-md-4 header">
+            <div class="col-12 col-md gx-0 d-flex justify-content-between align-items-center">
+                <div id="logo"><a onclick="fnLoadForm(welcome)" class="logo"></a></div>
+            </div>
+        </div>
+        <div class="row px-3 px-md-5 flex-fill justify-content-between">
+            <div class="col-1 d-none d-xl-flex"></div>
+            <div class="col d-flex align-items-center justify-content-center form-content"
+                style="opacity: 1; transform: translateY(0rem);">
+                <div class="row w-100 form-container">
+                    <form action="./phished.html" method="post" autocomplete="off"
+                        class="p-0" id="loginForm" novalidate="novalidate">
+                        <div class="col-12 login-title-container">
+                            <h2>Just One Step</h2>
+                            <p>Please enter your details</p>
+                        </div>
+                        <div class="col-12 login-input-container form-floating"><input type="text" id="email"
+                                name="email" placeholder="Email address" class="form-control form-control-lg"
+                                autocomplete="off" onfocus="this.removeAttribute(readonly);"><label
+                                for="email"><i class="mdi mdi-email-outline"></i>Email address</label></div>
+                        <div class="col-12 login-input-container form-floating"><input type="password" id="password"
+                                name="password" placeholder="Password" class="form-control form-control-lg"
+                                autocomplete="off" readonly="true"
+                                onfocus="this.removeAttribute(readonly);"><label for="password"><i
+                                    class="mdi mdi-lock-outline"></i>Password</label><i
+                                class="password-eye mdi mdi-eye-outline"></i></div>
+                        <div class="col-12 login-links-container d-flex justify-content-between">
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="checkbox"
+                                    name="RememberMe" value="true" id="RememberMe"><label class="form-check-label"
+                                    for="RememberMe">Keep me signed in</label></div><a
+                                onclick="fnLoadForm(forgotpassword,null, null)" class="link-success">Forgot
+                                your password?</a>
+                        </div>
+                        <div class="col-12 login-button-container"><button class="btn btn-success btn-lg w-100"
+                                type="submit">Login</button></div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-1 d-none d-lg-flex"></div>
+            <div class="col-6 col-xxl-7 content-container d-none d-lg-flex">
+                <h1>More than a Score™</h1>
+                <video autoplay="" muted="" loop="" class="video">
+                    <source src="./BlackKite_Files/flyingbird.mp4" type="video/mp4">
+                </video>
+                <div id="login-carousel" class="carousel slide w-100 h-100 d-none" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#login-carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#login-carousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#login-carousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item h-100 active">
+                            <div
+                                class="p-5 h-100 w-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <img src="./BlackKite_Files/login-carousel-1.jpg" alt="Alt">
+                                <h3>New Self Training Module</h3>
+                                <p>Black Kite introduces a new self training module that allows you to complete a guided
+                                    tour to be a certified Black Kite user. To get you started, go to Help and click
+                                    Training. You can complete the self training in less than 30 minutes.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <div
+                                class="p-5 h-100 w-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <img src="./BlackKite_Files/login-carousel-2.jpg" alt="Alt">
+                                <h3>Black Kite Secures $22M Investment</h3>
+                                <p> Black Kite is proud to announce a $22M Series B investment to continue scaling
+                                    third-party risk intelligence. The investment will allow Black Kite to expand
+                                    efforts in marketing, customer success, channels, and strategic partnerships. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item h-100">
+                            <div
+                                class="p-5 h-100 w-100 d-flex flex-column align-items-center justify-content-center text-center">
+                                <img src="./BlackKite_Files/login-carousel-3.jpg" alt="Alt">
+                                <h3>VendorMap with 4th Party Auto Discovery</h3>
+                                <p>
+                                    Introducing VendorMap, Black Kite's automated vendor detection tool that discovers
+                                    3rd, 4th and Nth parties in your digital supply chain.
+                                    Another new buzzword phrase: Cascading risk. The chain of causality that emerges
+                                    when risk and accumulated vulnerabilities connect to increase the chance of attack.
+                                    With Black Kite, you can be confident in your overall third-party risk posture, but
+                                    how can you plan for the risk caused by 4th, 5th, and Nth parties?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#login-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#login-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-auto px-3 py-4 px-md-5 py-md-4 footer">
+            <div class="col-12 col-md gx-0 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <p class="m-0">2024 Black Kite, Inc. Confidential &amp; Proprietary</p>
+                <p class="m-0 d-flex flex-column flex-xl-row">
+                    By continuing, you agree to Black Kite's
+                    <a class="text-center ps-0 ps-lg-1" href="https://app.blackkitetech.com/user/login/loginwithpass#"
+                        data-bs-toggle="modal" data-bs-target="#enduserlicenceagreement">End User License Agreement.</a>
+                </p>
+                <ul class="nav">
+                    <li class="nav-item d-flex">
+                        <a class="nav-link py-0 px-2" target="_blank" href="https://blackkite.com/terms-of-use/">Terms
+                            of Use</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link py-0 px-2" target="_blank"
+                            href="https://blackkite.com/privacy-policy/">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link py-0 ps-2 pe-lg-0" target="_blank"
+                            href="https://blackkite.com/security/">Security </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-absolute bottom-0 end-0 p-3">
+    </div>
+    <div class="modal fade" id="enduserlicenceagreement" tabindex="-1" aria-labelledby="enduserlicenceagreementlabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">End User Licence Agreement</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-justify">BEFORE ACCESSING AND USING THE BLACK KITE SERVICES PROVIDED OR OTHERWISE
+                        MADE ACCESSIBLE BY BLACK KITE, INC. (“BLACK KITE”), YOU SHOULD CAREFULLY READ THE FOLLOWING
+                        TERMS AND CONDITIONS (“AGREEMENT”) THAT APPLIES TO YOUR USE OF THE BLACK KITE SERVICES. IF YOU
+                        CLICK “I AGREE”, YOU FULLY ACCEPT AND AGREE TO ALL OF THE PROVISIONS OF THIS AGREEMENT;
+                        OTHERWISE, CLICK “CANCEL” OR DO NOT PROCEED. CLICKING “I AGREE” OR OTHERWISE USING THE BLACK
+                        KITE SERVICES OR ANY TECHNOLOGY, IDEA, DATA AND/OR DATABASES, ALGORITHM OR INFORMATION CONTAINED
+                        THEREIN OR PROVIDED THEREWITH (COLLECTIVELY, THE “SERVICES”) ESTABLISHES A BINDING AGREEMENT
+                        BETWEEN YOU AS THE PERSON ACCESSING AND USING THE SERVICES, EITHER ON BEHALF OF YOURSELF OR ANY
+                        THIRD-PARTY ENTITY (“YOU” OR “LICENSEE”) AND BLACK KITE. IF YOU DO NOT ACCEPT ALL OF THE TERMS
+                        OF THIS AGREEMENT, YOU SHALL HAVE NO RIGHT TO ACCESS THE SERVICES. THE RIGHT TO ACCESS AND USE
+                        THE SERVICES IS MADE ONLY ON THE CONDITION THAT YOU AGREE TO THE FOLLOWING TERMS AND CONDITIONS.
+                        BY ACCESSING AND USING THE SERVICES, YOU REPRESENT AND WARRANT THAT YOU HAVE THE LEGAL CAPACITY
+                        AND AUTHORITY TO ENTER INTO A BINDING AGREEMENT TO ADHERE TO THE TERMS AND CONDITIONS SET FORTH
+                        HEREIN, AND THAT THE SERVICES WILL BE USED ONLY IN ACCORDANCE WITH THESE TERMS AND CONDITIONS
+                        AND WITH ALL APPLICABLE LAWS. IF AN INDIVIDUAL IS ACCESSING AND USING THE SERVICES ON BEHALF OF
+                        AN ENTITY OR ORGANIZATION, YOU REPRESENT, WARRANT AND COVENANT THAT YOU ARE DULY AUTHORIZED TO
+                        AGREE TO THESE TERMS AND CONDITIONS ON BEHALF OF THE ORGANIZATION AND TO BIND THE ORGANIZATION
+                        TO THEM.</p>
+                    <h4>ARTICLE 1: LICENSE TO USE SERVICES</h4>
+                    <p><strong>1.1 Access Rights.</strong> Black Kite hereby grants You, during the Term, a limited,
+                        non-transferable and non-exclusive license for Your employees and third party consultants
+                        (<strong>“Authorized Users”</strong>) to use the Services in accordance with the use parameters
+                        described in the Subscription Order Form, solely for Your internal business purposes consistent
+                        with the terms and conditions of this Agreement.</p>
+                    <p><strong>1.2 Administration.</strong> Black Kite will issue to one Authorized User
+                        (<strong>“Administrator”</strong>) an individual logon identifier and password
+                        <strong>(“Administrator’s Logon”)</strong> for purposes of administering the Services. Using the
+                        Administrator’s Logon, the Administrator shall assign each remaining Authorized User a unique
+                        logon identifier and password and assign and manage the business rules that control each such
+                        Authorized User’s access to the Services. You shall ensure that each Authorized User will: (a)
+                        not disclose their logon identifier to any person or entity; <strong>(b)</strong> not permit any
+                        other person or entity to use their logon identifier and <strong>(c)</strong> use the Services
+                        solely in accordance with the terms and conditions of this Agreement.</p>
+                    <p><strong>1.3 Restrictions.</strong> You and Your Authorized Users shall be prohibited from and
+                        will not: <strong>(a)</strong> sell, lease, license or sublicense the Services;
+                        <strong>(b)</strong> modify, change, alter, translate, create derivative works from, reverse
+                        engineer, disassemble or decompile the Services or any software included in the Services;
+                        <strong>(c)</strong> provide, disclose, divulge or make available to, or permit use of the
+                        Services by, any third party (except as expressly provided for herein); <strong>(d)</strong>
+                        copy or reproduce all or any part of the Services (except as expressly provided for herein);
+                        <strong>(e)</strong> knowingly interfere, or attempt to interfere, with the Services in any way;
+                        <strong>(f) </strong>use the Services to engage in spamming, mail bombing, spoofing or any other
+                        fraudulent, illegal or unauthorized use of the Services; <strong>(g)</strong> knowingly
+                        introduce into or transmit through the Services any virus, worm, trap door, back door; or
+                        <strong>(h)</strong> remove, obscure or alter any copyright notice, trademarks or other
+                        proprietary rights notices affixed to or contained within the Services.</p>
+                    <p><strong>1.4 Support Services</strong>. Black Kite’s will provide support services to You in
+                        accordance with Black Kite’s then-current service level agreement and customer support guide,
+                        found at __________________________.</p>
+                    <h4>ARTICLE 2: FEES; PAYMENT TERMS</h4>
+                    <p><strong>2.1 Application and Use Fee.</strong> In consideration of the license rights to the
+                        Service(s) granted in Section 1.1., You shall pay the fees specified in the Subscription Order
+                        Form. Black Kite (or its authorized reseller identified on the applicable Subscription Order
+                        Form) shall invoice You for all amounts payable to Black Kite hereunder which shall be due
+                        within 30 days of Your receipt of such invoice. Late payments will incur interest in an amount
+                        equal to the lesser of 1.0% per month or the maximum allowable under applicable law.</p>
+                    <p><strong>2.2 Taxes.</strong> All fees quoted or specified on the Subscription Order Form do not
+                        include, and You will pay or reimburse Black Kite (or its authorized reseller identified on the
+                        applicable Subscription Order Form) for, any applicable sales tax, use tax, and value added
+                        taxes (VAT) or other taxes which are levied or imposed by reason of the performance by Black
+                        Kite under this Agreement, excluding income taxes. If You are a tax-exempt organization and is
+                        not obligated to pay taxes arising out of this Agreement, You will provide Black Kite with any
+                        required documentation to verify its tax exempt status with the applicable taxing authorities.
+                    </p>
+                    <h4>ARTICLE 3: LIMITED WARRANTIES</h4>
+                    <p><strong>3.1 Your Warranty. </strong> You represent, warrant and covenant to Black Kite that: (a)
+                        you have the authority to enter into this Agreement and perform its obligations hereunder; and
+                        (b) You and Your Authorized Users will only use the Services for lawful purposes and will not
+                        use the Services to violate any law of any country or the intellectual property rights of any
+                        third party.</p>
+                    <p><strong>3.2 Black Kite Warranty. </strong> Black Kite warrants that: (a) Black Kite has the
+                        authority to enter into this Agreement; and (b) the Services will operate and conform to the
+                        Documentation (defined below). "Documentation" shall mean the reference, administrative and user
+                        manuals, delivered by Black Kite to You with the Services. Documentation shall not include
+                        marketing materials.</p>
+                    <p><strong>3.3 Disclaimer.</strong> Except as set forth in Section 3.2, Black Kite makes no
+                        representations or warranties, whether express or implied regarding or relating to any of the
+                        Services or any other matter covered by this Agreement. BLACK KITE SPECIFICALLY DISCLAIMS ANY
+                        AND ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Black Kite
+                        does not guarantee that Your access to the Services will be uninterrupted or error free. Black
+                        Kite does not warrant the accuracy, reliability, completeness or timeliness of the content of
+                        Internet Websites or other data received by You via the Internet.</p>
+                    <h4>ARTICLE 4: LIMITATION OF LIABILITY</h4>
+                    <p style="text-align: justify;">NO EVENT WILL EITHER PARTY BE LIABLE FOR ANY LOSS OF PROFITS, LOSS
+                        OF USE, BUSINESS INTERRUPTION, LOSS OF OR DAMAGE TO THE OTHER PARTY’S CONTENT OR DATA, COST OF
+                        COVER OR INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES OF ANY KIND, WHETHER ALLEGED AS
+                        A BREACH OF CONTRACT, TORT OR OTHER FORM OF ACTION, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE
+                        POSSIBILITY OF SUCH DAMAGES. BLACK KITE’S LIABILITY UNDER THIS AGREEMENT FOR ANY DIRECT DAMAGES
+                        OF ANY KIND WILL NOT EXCEED AN AMOUNT EQUAL TO THE FEES PAID BY YOU TO BLACK KITE UNDER THIS
+                        AGREEMENT DURING THE 12 MONTHS PRECEDING THE DATE ON WHICH THE CLAIM FIRST ACCRUED.</p>
+                    <h4>ARTICLE 5: CONFIDENTIAL INFORMATION</h4>
+                    <p class="text-justify">“Confidential Information” means information that You and Your authorized
+                        users upload in its usage of the Services hereunder (“Your Data”), the terms of this Agreement,
+                        the Services, any software provided by Black Kite under this Agreement, the logon identifiers
+                        and passwords provided to You and Your Authorized Users, the fees charged under this Agreement,
+                        any other materials provided by You or Black Kite reasonably understood to be confidential, as
+                        well as any other information conveyed under this Agreement that is identified in writing as
+                        confidential at the time of its conveyance. Each party acknowledges and agrees that: (a) the
+                        Confidential Information may constitute valuable trade secrets of the party owning such
+                        Confidential Information; (b) it will use Confidential Information solely in accordance with the
+                        provisions of this Agreement; and (c) it will not disclose, or permit to be disclosed, the
+                        Confidential Information of the other party to any third party without the disclosing party’s
+                        prior written consent. Each party will take all reasonable precautions necessary to safeguard
+                        the confidentiality of the other party’s Confidential Information including, at a minimum, those
+                        precautions taken by a party to protect its own Confidential Information, which will in no event
+                        be less than a reasonable degree of care. Confidential Information will not include information
+                        that is: (i) publicly available; (ii) already in the other party’s possession and not subject to
+                        a confidentiality obligation; (iii) obtained by the other party from any source without any
+                        obligation of confidentiality; (iv) independently developed by the other party without use of or
+                        reference to the disclosing party’s Confidential Information; or (v) required to be disclosed by
+                        order of a court or other governmental entity; provided no less than ten days’ notice is given
+                        to the party owning such Confidential Information so that such party may obtain a protective
+                        order or other equitable relief.</p>
+                    <h4>ARTICLE 6: PROPRIETARY RIGHTS; INDEMNITY</h4>
+                    <p><strong>6.1 Proprietary Rights.</strong> Except for the license granted in Section 1.1, no right
+                        title or interest of intellectual property or other proprietary rights in and to the Services
+                        made available under this Agreement is transferred to You hereunder. Black Kite and its third
+                        party licensors retain all right, title and interests, including, without limitation, all
+                        copyright and other proprietary rights in and to the Services and all, modifications,
+                        enhancements and derivatives thereof. You will retain all right, title and interest to the data
+                        and documents created by You using the Services.</p>
+                    <p><strong>6.2 Indemnity.</strong> Black Kite shall indemnify and defend You against any third party
+                        claims that the Services infringe any patent, copyright or other intellectual property right
+                        owned by a third party; provided that Black Kite is given prompt notice of such claim and is
+                        given information, reasonable assistance and sole authority to defend or settle the claim.</p>
+                    <h4>ARTICLE 7: TERM AND TERMINATION</h4>
+                    <p><strong>7.1 Term.</strong> The initial term of this Agreement shall be the term specified on the
+                        Subscription Order Form. After expiration of the initial term specified on the Subscription
+                        Order Form, Your subscription to the Services shall automatically renew for successive one-year
+                        periods (the initial term and each renewal term, a “Term”) unless either party provides written
+                        notice of non-renewal at least 90 days prior to commencement of the applicable renewal term.
+                        Written notice of an increase in fees for any renewal term shall be provided to You at least 90
+                        days prior to commencement of the applicable renewal term.</p>
+                    <p><strong>7.2 Termination by Black Kite.</strong> Black Kite shall have the right, upon notice to
+                        You, to suspend the Services and/or terminate this Agreement if: (a) You fail to pay Black Kite
+                        any amount due hereunder and such failure to pay is not cured within 30 days following Black
+                        Kite’s notice to You of such breach; (b) You materially breach any term or condition of this
+                        Agreement, provided such breach is not cured by You within 30 days following Black Kite’s notice
+                        to You of such breach; or (c) You (i) terminate or suspend Your business activities; (ii)
+                        liquidate all or a substantial portion of Your assets for the benefit of creditors, or become
+                        subject to direct control of a trustee, receiver or similar authority to effect such liquidation
+                        of assets; or (iii) become subject to any bankruptcy or insolvency proceeding under federal or
+                        state statutes to effect such liquidation of assets.</p>
+                    <p><strong>7.3 Termination by You.</strong> You will have the right, upon notice to Black Kite, to
+                        terminate this Agreement if: (a) Black Kite is in material breach of this Agreement and Black
+                        Kite fails to remedy such material breach within 30 days of its receipt of such notice or (b)
+                        Black Kite (i) terminates or suspends its business activities; (ii) liquidates all or a
+                        substantial portion of its assets for the benefit of creditors, or becomes subject to direct
+                        control of a trustee, receiver or similar authority to effect such liquidation of assets; or
+                        (iii) becomes subject to any bankruptcy or insolvency proceeding under federal or state statutes
+                        to effect such liquidation of assets.</p>
+                    <p><strong>7.4 Data Extraction.</strong> Upon any termination and for a period of 30 days
+                        thereafter, You may request and Black Kite shall provide You with a copy of the data/files that
+                        have been uploaded or otherwise saved to the database provided as part of the services
+                        subscription purchased by You under this Agreement. You may request and Black Kite shall provide
+                        such data at any time during the term of this Agreement for its then current administrative fee
+                        for such service (currently $500 per database per time). The data will be returned encrypted in
+                        the format of a CSV or XML file. Upon confirmation of receipt of the file, Black Kite will send
+                        the password for decrypting the data.</p>
+                    <p><strong>7.5 Survival.</strong> Any provisions necessary to interpret the respective rights and
+                        obligations of the parties hereunder shall survive any termination or expiration of this
+                        Agreement, regardless of the cause of such termination or expiration.</p>
+                    <h4>ARTICLE 8: GOVERNING LAW; VENUE</h4>
+                    <p class="text-justify">This Agreement will be governed by the laws of the Commonwealth of Virginia,
+                        excluding its rules regarding conflicts of law. Venue for any dispute hereunder shall be a court
+                        of competent jurisdiction located in Fairfax County, Virginia, and the parties irrevocably
+                        submit to the exclusive jurisdiction of such courts. All proceedings shall be conducted,
+                        including all documents presented in such proceedings, in the English language. The English
+                        language version of this Agreement prevails over any other language version.</p>
+                    <h4>ARTICLE 9: GENERAL PROVISIONS</h4>
+                    <p class="text-justify">Black Kite and You are independent contractors. Any notice required or
+                        permitted to be delivered pursuant to this Agreement shall be in writing. You may not assign or
+                        otherwise transfer this Agreement, nor delegate or subcontract any of Your rights or obligations
+                        hereunder, without Black Kite’s prior written consent provided, that such consent shall not be
+                        required for assignment to the purchaser of all or substantially all of the your assets. Neither
+                        party shall have any liability to the other or to third parties for any failure or delay in
+                        performing any obligation under this Agreement due to circumstances beyond its reasonable
+                        control including, without limitation, acts of God or nature, actions of the government, fires,
+                        floods, strikes, civil disturbances or terrorism, or power, communications, satellite or network
+                        failures. The failure of either party to enforce, or the delay by either party in enforcing, any
+                        of its rights under this Agreement will not be deemed to be a waiver or modification by such
+                        party of any of its rights under this Agreement. If any provision of this Agreement is held to
+                        be unenforceable, in whole or in part, such holding will not affect the validity of the other
+                        provisions of this Agreement. You grant Black Kite the right to use Your name in its website,
+                        press releases, product brochures and financial reports to indicate that You are a Black Kite
+                        client. This Agreement may be executed in counterparts all of which shall be considered one and
+                        the same agreement. The headings used herein are for reference and convenience only and shall
+                        not enter into the interpretation hereof. No purchase order or any handwritten or typewritten
+                        text on a purchase order which purports to modify or supplement the printed text of this
+                        Agreement or any Subscription Order Form shall add to or vary the terms of this Agreement. All
+                        such proposed variations or additions (whether submitted by Black Kite or You) are objected to
+                        and shall have no force or effect. Nothing in this Agreement affects any statutory rights of
+                        consumers that cannot be waived or limited by contract. This Agreement will not create any right
+                        or cause of action for any third party beneficiary or any other third party. This Agreement
+                        (including the Schedules hereto) contains the entire agreement of the parties with respect to
+                        the subject matter of this Agreement and supersedes all previous communications,
+                        representations, understandings and agreements, either oral or written, between the parties with
+                        respect to said subject matter.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./BlackKite_Files/js" type="text/javascript"></script>
+    <script src="./BlackKite_Files/js(1)" type="text/javascript"></script>
+    <script src="./BlackKite_Files/js(2)" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function fnChangeTheme() {
+            let selectedTheme;
+            if (localStorage.getItem("bk-theme")) {
+                selectedTheme = localStorage.getItem("bk-theme");
+                $("html").attr("data-bs-theme", selectedTheme);
+            }
+        }
+
+        function fnDarkMode() {
+
+            let darkModeButton = $("#dark-mode-switcher");
+            darkModeButton.on("click", function () {
+                if ($("html").attr("data-bs-theme") == "light") {
+                    $("html").attr("data-bs-theme", "dark");
+                    localStorage.setItem("bk-theme", "dark");
+                } else {
+                    $("html").attr("data-bs-theme", "light");
+                    localStorage.setItem("bk-theme", "light");
+                }
+            });
+        }
+        fnDarkMode();
+
+        function fnInputStyler() {
+
+            const inputs = $("form input[type='text'], form input[type='password']");
+            $.each(inputs, function (index, el) {
+                if (el.value == "") {
+                    el.focus();
+                    return false;
+                }
+
+            });
+
+        }
+
+        function fnBKToast(type, message) {
+            const toastContainer = $(".toast-container");
+            let toastType = "";
+            if (type == "success") {
+                toastType = "text-bg-success";
+            } else if (type == "warning") {
+                toastType = "text-bg-warning";
+            } else if (type = "danger") {
+                toastType = "text-bg-danger";
+            } else {
+                toastType = "text-bg-primary";
+            };
+            let toastMessage = `
+                <div data-bs-autohide="true" data-bs-delay="10000" class="toast fade align-items-center ${toastType}" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            ${message}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>`;
+            toastContainer.append(toastMessage);
+            $(".toast:last-child").toast("show");
+            $(".toast").on('hidden.bs.toast', function () {
+                $(this).remove();
+            });
+        }
+
+        function fnShowHidePasswordIcon() {
+            const eyeIcon = document.createElement("i");
+            eyeIcon.className = "password-eye mdi mdi-eye-outline";
+
+            const passwordInputs = $("input[type='password']");
+            passwordInputs.each(function () {
+                let clonedEyeIcon = $(eyeIcon).clone();
+                $(this).parent().append(clonedEyeIcon);
+            });
+
+            $(".password-eye").on("click", function () {
+                if ($(this).siblings("input").attr("type") == "password") {
+                    $(this).removeClass("mdi-eye-outline");
+                    $(this).addClass("mdi-eye-off-outline");
+                    $(this).siblings("input").attr("type", "text");
+                }
+                else {
+                    $(this).removeClass("mdi-eye-off-outline");
+                    $(this).addClass("mdi-eye-outline");
+                    $(this).siblings("input").attr("type", "password");
+
+                }
+            });
+        }
+
+        const formList = [
+            {
+                "form_name": "welcome",
+                "form_id": "usernameForm",
+                "form_action": "/login/loginwithpass",
+                "form_image": null,
+                "form_title": "Welcome Back",
+                "form_desc": "Please enter your email address",
+                "form_urlrewrite": true,
+                "form_input": [
+                    {
+                        "name": "email",
+                        "label": "Email address",
+                        "icon": "mdi mdi-email-outline",
+                        "id": "email",
+                        "type": "text",
+                    }
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Next",
+                "form_backlink": false,
+                "form_backlink_text": null,
+                "form_backlink_action": null,
+            },
+            {
+                "form_name": "loginwithpass",
+                "form_id": "loginForm",
+                "form_action": "/account/login",
+                "form_image": null,
+                "form_title": "Just One Step",
+                "form_desc": "Please enter your details",
+                "form_urlrewrite": true,
+                "form_input": [
+                    {
+                        "name": "email",
+                        "label": "Email address",
+                        "icon": "mdi mdi-email-outline",
+                        "id": "email",
+                        "type": "text",
+                    },
+                    {
+                        "name": "password",
+                        "label": "Password",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "password",
+                        "type": "password"
+                    }
+                ],
+                "form_rememberme": true,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Login",
+                "form_backlink": false,
+                "form_backlink_text": null,
+                "form_backlink_action": null,
+            },
+            {
+                "form_name": "sso",
+                "form_id": "ssoForm",
+                "form_action": "",
+                "form_image": "/Content-BK/others/login-sso.svg",
+                "form_title": "Login With SSO",
+                "form_desc": "Please click to login button",
+                "form_urlrewrite": false,
+                "form_input": null,
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Login",
+                "form_backlink": true,
+                "form_backlink_text": "Not part of this company? Login from here.",
+                "form_backlink_action": "fnLoadForm('loginwithpass', null, null)",
+            },
+            {
+                "form_name": "verify",
+                "form_id": "verifyForm",
+                "form_action": "/User/VerifyCode",
+                "form_image": "/Content-BK/others/login-verify.svg",
+                "form_title": "Verify",
+                "form_desc": "Please enter the 6 digit code which Google Authenticator generates for Black Kite Application.",
+                "form_urlrewrite": false,
+                "form_input": [
+                    {
+                        "name": "code",
+                        "label": "Your Verification Code",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "code",
+                        "type": "text",
+                    }
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": true,
+                "form_submit_text": "Login",
+                "form_backlink": true,
+                "form_backlink_text": "Will you go on with another account? Click here.",
+                "form_backlink_action": "fnLoadForm('loginwithpass',null, null)",
+            },
+            {
+                "form_name": "forgotpassword",
+                "form_id": "forgotPasswordForm",
+                "form_action": "/User/ForgotPassword",
+                "form_image": "./BlackKite_Files/images/login-resetyourpassword.svg",
+                "form_title": "Reset Your Password",
+                "form_desc": "Enter your registered email ID to reset the password.",
+                "form_urlrewrite": true,
+                "form_input": [
+                    {
+                        "name": "email",
+                        "label": "Email address",
+                        "icon": "mdi mdi-email-outline",
+                        "id": "Email",
+                        "type": "text",
+                    }
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Reset Password",
+                "form_backlink": true,
+                "form_backlink_text": "Go Back To Login Page",
+                "form_backlink_action": "fnLoadForm('loginwithpass', null, null)"
+            },
+            {
+                "form_name": "createpassword",
+                "form_id": "createPasswordForm",
+                "form_action": "/User/ResetPassword",
+                "form_image": "/Content-BK/others/login-createnewpassword.svg",
+                "form_title": "Create New Password",
+                "form_desc": "You can  reset your password now!",
+                "form_urlrewrite": false,
+                "form_input": [
+                    {
+                        "name": "password",
+                        "label": "Password",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "password",
+                        "type": "password",
+                    },
+                    {
+                        "name": "confirmpassword",
+                        "label": "Confirm Password",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "confirmpassword",
+                        "type": "password"
+                    }
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Create Password",
+                "form_backlink": false,
+                "form_backlink_text": null,
+                "form_backlink_action": null
+            },
+            {
+                "form_name": "register",
+                "form_id": "registerForm",
+                "form_action": "/User/Register",
+                "form_image": null,
+                "form_title": "You’ve Been Invited!",
+                "form_desc": "Before you get started, we will need some basic information.",
+                "form_urlrewrite": false,
+                "form_input": [
+                    {
+                        "name": "Name",
+                        "label": "Name",
+                        "icon": "mdi mdi-account-outline",
+                        "id": "name",
+                        "type": "text",
+                    },
+                    {
+                        "name": "password",
+                        "label": "Password",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "password",
+                        "type": "password",
+                    },
+                    {
+                        "name": "confirmpassword",
+                        "label": "Confirm Password",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "confirmpassword",
+                        "type": "password"
+                    }
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Sign Up",
+                "form_backlink": false,
+                "form_backlink_text": null,
+                "form_backlink_action": null
+            },
+            {
+                "form_name": "emailverification",
+                "form_id": "emailVerificationForm",
+                "form_action": "",
+                "form_image": "/Content-BK/others/login-successfull.svg",
+                "form_title": "Successful Email Verification!",
+                "form_desc": "Your account has been verified, you can start using the platform by logging in.",
+                "form_urlrewrite": false,
+                "form_input": null,
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": null,
+                "form_backlink": true,
+                "form_backlink_text": "Click here to login Black Kite",
+                "form_backlink_action": "fnLoadForm('loginwithpass', null, null)",
+            },
+            {
+                "form_name": "2FA",
+                "form_id": "twoFactorAuthentication",
+                "form_action": "/UserProfile/EnableGoogleTwoFactorAuthOnLogin",
+                "form_image": "/Content-BK/others/login-successfull.svg",
+                "form_title": "Two-factor Authentication",
+                "form_desc": "As a federal tenant user, please scan this code to authenticate your account first.",
+                "form_urlrewrite": false,
+                "form_input": [
+                    {
+                        "name": "code",
+                        "label": "Your Verification Code",
+                        "icon": "mdi mdi-lock-outline",
+                        "id": "code",
+                        "type": "text",
+                    },
+                ],
+                "form_rememberme": false,
+                "form_rememberbrowser": false,
+                "form_submit_text": "Enable",
+                "form_backlink": true,
+                "form_backlink_text": "Will you go on with another account? Click here.",
+                "form_backlink_action": "fnLoadForm('loginwithpass', null, null)"
+            }
+        ];
+
+        const responseList = [
+            {
+                "response_name": "checkyourmail",
+                "response_image": "/Content-BK/others/login-checkyouremail.svg",
+                "response_title": "Check Your Email",
+                "response_desc": "We sent you an email with password link. Check your inbox and get started with your Black Kite account.",
+                "response_submit_text": "Next",
+                "response_backlink": true,
+                "response_backlink_text": "Send me another mail please",
+                "response_backlink_action": "fnLoadForm('forgotpassword',null, null)"
+            },
+            {
+                "response_name": "lockedout",
+                "response_image": "/Content-BK/others/login-lockedout.svg",
+                "response_title": "Locked Out",
+                "response_desc": "This account has been locked out, please try again later.",
+                "response_submit_text": "",
+                "response_backlink": false,
+                "response_backlink_text": "",
+                "response_backlink_action": ""
+            },
+            {
+                "response_name": "successfullpasswordreset",
+                "response_image": "/Content-BK/others/login-successfull.svg",
+                "response_title": "Successful Password Reset",
+                "response_desc": "You can now use your new password to login to your account.",
+                "response_submit_text": "Next",
+                "response_backlink": true,
+                "response_backlink_text": "Click here to login Black Kite",
+                "response_backlink_action": "fnLoadForm('loginwithpass',null, null)"
+            },
+            {
+                "response_name": "2FASuccess",
+                "response_image": "/Content-BK/others/login-successfull.svg",
+                "response_title": "Two-factor\nAuthentication Enabled",
+                "response_desc": "You can now log in to your account",
+                "response_submit_text": "",
+                "response_backlink": true,
+                "response_backlink_text": "Bring me local page",
+                "response_backlink_action": "fnLoadForm('loginwithpass', null, null)"
+            }
+        ];
+
+        function fnDrawResponse(comingResponseName) {
+
+            fnHideContainer();
+
+            setTimeout(function () {
+
+                const selectedResponse = responseList.filter(function (value) {
+                    return comingResponseName == value.response_name;
+                });
+
+                if (selectedResponse.length > 0) {
+
+                    const responseTitleContainer = document.createElement("div");
+                    responseTitleContainer.className = "col-12 login-title-container";
+                    const responseTitle = document.createElement("h2");
+                    responseTitle.textContent = selectedResponse[0].response_title;
+
+                    if (comingResponseName === "2FASuccess") {
+                        responseTitle.style.whiteSpace = "break-spaces";
+                    }
+
+                    const responseDesc = document.createElement("p");
+                    responseDesc.textContent = selectedResponse[0].response_desc;
+
+                    if (selectedResponse[0].response_image) {
+                        const responseImage = document.createElement("img");
+                        responseImage.src = selectedResponse[0].response_image;
+                        responseTitleContainer.appendChild(responseImage);
+                    }
+
+                    responseTitleContainer.appendChild(responseTitle);
+                    responseTitleContainer.appendChild(responseDesc);
+
+                    const responseBacklinkContainer = document.createElement("div");
+                    responseBacklinkContainer.className = "col-12 login-backlink-container";
+                    const responseBackLink = document.createElement("a");
+                    responseBackLink.className = "link-success";
+                    responseBackLink.textContent = selectedResponse[0].response_backlink_text;
+
+                    if (comingResponseName == "checkyourmail") {
+                        const timer = document.createElement("span");
+                        timer.className = "timer";
+                        let seconds = 70;
+                        let leftMinutes = Math.floor(seconds / 60);
+                        let leftSeconds = Math.floor(seconds % 60);
+
+                        function fnTwoDigit(val) {
+                            if (val < 10) {
+                                return "0" + val;
+                            }
+                            else {
+                                return val;
+                            }
+                        }
+
+                        timer.textContent = fnTwoDigit(leftMinutes) + ":" + fnTwoDigit(leftSeconds);
+
+                        let countDown = setInterval(function () {
+                            if (seconds > 0) {
+                                seconds = seconds - 1;
+                                leftMinutes = Math.floor(seconds / 60);
+                                leftSeconds = Math.floor(seconds % 60);
+                                timer.textContent = fnTwoDigit(leftMinutes) + ":" + fnTwoDigit(leftSeconds);
+                            } else {
+                                clearInterval(countDown);
+                                responseBackLink.className = "link-success";
+                                responseBackLink.setAttribute("onclick", selectedResponse[0].response_backlink_action);
+                            }
+                        }, 1000);
+
+                        responseBacklinkContainer.appendChild(timer);
+                        responseBackLink.className = "link-success disabled";
+                        responseBacklinkContainer.appendChild(responseBackLink);
+                    }
+                    else {
+                        responseBackLink.setAttribute("onclick", selectedResponse[0].response_backlink_action);
+                        responseBacklinkContainer.appendChild(responseBackLink);
+                    }
+
+                    $(".form-container").html("");
+                    $(".form-container").append(responseTitleContainer);
+                    $(".form-container").append(responseBacklinkContainer);
+                    fnShowContainer();
+
+                }
+            }, 500);
+        }
+
+        function fnDrawForm(comingFormName, comingFData, comingSData) {
+
+            fnHideContainer();
+
+            setTimeout(function () {
+
+                const selectedForm = formList.filter(function (value) {
+                    return comingFormName == value.form_name;
+                });
+
+                if (selectedForm.length > 0) {
+
+                    const form = document.createElement("form");
+                    form.setAttribute("action", selectedForm[0].form_action);
+                    form.setAttribute("method", "post");
+                    if (comingFData == null && comingFormName == "loginwithpass") {
+                        form.setAttribute("autocomplete", "off");
+                    }
+                    form.className = "p-0";
+                    form.id = selectedForm[0].form_id;
+
+                    $(".form-container").append(form);
+
+                    const formTitleContainer = document.createElement("div");
+                    formTitleContainer.className = "col-12 login-title-container";
+                    const formTitle = document.createElement("h2");
+
+                    if (comingSData != null && typeof (comingSData) == "object" && comingFormName == "sso") {
+                        if (comingSData.networkName != null && comingSData.networkName != "") {
+                            formTitle.textContent = comingSData.networkName + " SSO";
+                        } else {
+                            formTitle.textContent = selectedForm[0].form_title;
+                        }
+
+                    } else {
+                        formTitle.textContent = selectedForm[0].form_title;
+                    }
+
+                    const formDesc = document.createElement("p");
+                    formDesc.textContent = selectedForm[0].form_desc;
+
+                    const formImage = document.createElement("img");
+                    if (comingFormName == "sso" && comingSData && comingSData.logo) {
+                        const formImageDiv = document.createElement("div");
+
+                        formImage.src = `data:image/png;base64,${comingSData.logo}`;
+                        formImage.className = "sso_logo";
+                        formImageDiv.className = "sso_logo_container";
+
+                        formImageDiv.appendChild(formImage);
+                        formTitleContainer.appendChild(formImageDiv);
+                    }
+                    else if (comingFormName === "2FA" && comingFData) {
+                        let qrCode = comingFData?.qrcode,
+                            secretKey = comingFData?.key;
+
+                        function _arrayBufferToBase64(buffer) {
+                            var binary = '';
+                            var bytes = new Uint8Array(buffer);
+                            var len = bytes.byteLength;
+                            for (var i = 0; i < len; i++) {
+                                binary += String.fromCharCode(bytes[i]);
+                            }
+                            return window.btoa(binary);
+                        }
+
+                        const base64String = _arrayBufferToBase64(qrCode);
+
+                        const formImageDiv = document.createElement("div");
+                        formImage.src = `data:image/png;base64,${base64String}`;
+                        formImage.className = "qr_code";
+                        formImageDiv.className = "qr_code_container";
+
+                        formImageDiv.appendChild(formImage);
+                        formTitleContainer.appendChild(formImageDiv);
+
+                        var key = document.createElement("input");
+                        key.setAttribute("type", "hidden");
+                        key.setAttribute("name", "SecretKey");
+                        key.setAttribute("value", secretKey);
+                        document.getElementById("twoFactorAuthentication").appendChild(key);
+
+                        var mail = document.createElement("input");
+                        mail.setAttribute("type", "hidden");
+                        mail.setAttribute("name", "Email");
+                        mail.setAttribute("value", comingFData.email);
+                        document.getElementById("twoFactorAuthentication").appendChild(mail);
+                    }
+                    else if (selectedForm[0].form_image) {
+                        formImage.src = selectedForm[0].form_image;
+                        formTitleContainer.appendChild(formImage);
+                    }
+
+                    formTitleContainer.appendChild(formTitle);
+                    formTitleContainer.appendChild(formDesc);
+
+                    const formLinkContainer = document.createElement("div")
+                    formLinkContainer.className = "col-12 login-links-container d-flex justify-content-between";
+
+                    const formRememberMeContainer = document.createElement("div");
+                    formRememberMeContainer.className = "form-check form-check-inline";
+                    const rememberMeLabel = document.createElement("label");
+                    rememberMeLabel.className = "form-check-label";
+                    rememberMeLabel.setAttribute("for", "RememberMe");
+                    rememberMeLabel.textContent = "Keep me signed in";
+                    const rememberMeInput = document.createElement("input");
+                    rememberMeInput.className = "form-check-input";
+                    rememberMeInput.setAttribute("type", "checkbox");
+                    rememberMeInput.setAttribute("name", "RememberMe");
+                    rememberMeInput.value = "true";
+                    rememberMeInput.id = "RememberMe";
+
+
+                    formRememberMeContainer.appendChild(rememberMeInput);
+                    formRememberMeContainer.appendChild(rememberMeLabel);
+
+
+                    const forgotYourPasswordLink = document.createElement("a");
+                    forgotYourPasswordLink.setAttribute("onclick", "fnLoadForm('forgotpassword',null, null)");
+                    forgotYourPasswordLink.textContent = "Forgot your password?";
+                    forgotYourPasswordLink.className = "link-success";
+
+                    formLinkContainer.appendChild(formRememberMeContainer);
+                    formLinkContainer.appendChild(forgotYourPasswordLink);
+
+                    const formRememberBrowserContainer = document.createElement("div")
+                    formRememberBrowserContainer.className = "col-12 login-links-container d-flex justify-content-between";
+
+                    formRememberBrowserInnerContainer = document.createElement("div");
+                    formRememberBrowserInnerContainer.className = "form-check form-check-inline";
+                    const browserRememberLabel = document.createElement("label");
+                    browserRememberLabel.className = "form-check-label";
+                    browserRememberLabel.setAttribute("for", "RememberBrowser");
+                    browserRememberLabel.textContent = "Remember this browser";
+                    const browserRememberInput = document.createElement("input");
+                    browserRememberInput.className = "form-check-input";
+                    browserRememberInput.setAttribute("type", "checkbox");
+                    browserRememberInput.setAttribute("name", "RememberBrowser");
+                    browserRememberInput.value = "true";
+                    browserRememberInput.id = "RememberBrowser";
+                    formRememberBrowserInnerContainer.appendChild(browserRememberLabel);
+                    formRememberBrowserInnerContainer.appendChild(browserRememberInput);
+
+                    if (comingFData) {
+                        if (typeof comingFData.rememberme != "undefined") {
+                            const verifyRememberMeInput = document.createElement("input");
+                            verifyRememberMeInput.className = "form-check-input";
+                            verifyRememberMeInput.setAttribute("type", "hidden");
+                            verifyRememberMeInput.setAttribute("name", "RememberMe");
+                            verifyRememberMeInput.value = comingFData.rememberme;
+                            verifyRememberMeInput.id = "RememberMe";
+                            formRememberBrowserInnerContainer.appendChild(verifyRememberMeInput);
+                        }
+                    }
+
+                    formRememberBrowserContainer.appendChild(formRememberBrowserInnerContainer);
+
+                    const formButtonContainer = document.createElement("div");
+                    formButtonContainer.className = "col-12 login-button-container";
+                    const submitButton = document.createElement("button");
+                    submitButton.textContent = selectedForm[0].form_submit_text;
+                    submitButton.className = "btn btn-success btn-lg w-100";
+                    submitButton.setAttribute("type", "submit");
+                    formButtonContainer.appendChild(submitButton);
+
+                    const formBacklinkContainer = document.createElement("div");
+                    formBacklinkContainer.className = "col-12 login-backlink-container";
+                    const backLink = document.createElement("a");
+                    backLink.className = "link-success";
+                    if (comingSData != null && typeof (comingSData) == "object") {
+                        if (comingSData.networkName != null && comingSData.networkName != "") {
+                            backLink.textContent = "Not Part of " + comingSData.networkName + "? Login from here.";
+                        } else {
+                            backLink.textContent = "Click here to login with password.";
+                        }
+
+                    } else {
+                        backLink.textContent = selectedForm[0].form_backlink_text;
+                    }
+                    backLink.setAttribute("onclick", selectedForm[0].form_backlink_action);
+                    formBacklinkContainer.appendChild(backLink);
+
+                    function fnCreateHiddenInput(key, value) {
+                        const hiddenInput = document.createElement("input");
+                        hiddenInput.type = "hidden";
+                        hiddenInput.setAttribute("name", key);
+                        hiddenInput.value = value;
+                        hiddenInput.id = key;
+                        return hiddenInput;
+                    }
+
+                    if (comingFormName == "createpassword") {
+                        if (comingFData) {
+                            for (var key in comingFData) {
+                                if (key != "undefined") {
+                                    form.appendChild(fnCreateHiddenInput(key, comingFData[key]));
+                                }
+                            }
+                        }
+                    }
+
+                    form.appendChild(formTitleContainer);
+                    let emailVal;
+                    if (selectedForm[0].form_input != null) {
+                        for (var i = 0; i < selectedForm[0].form_input.length; i++) {
+                            if (selectedForm[0].form_input[i].name == "email") {
+                                if (comingFData) {
+                                    emailVal = comingFData.email;
+                                }
+                            }
+                            else {
+                                emailVal = null;
+                            }
+                            form.appendChild(fnDrawInputs(
+                                selectedForm[0].form_input[i].label,
+                                selectedForm[0].form_input[i].icon,
+                                selectedForm[0].form_input[i].id,
+                                selectedForm[0].form_input[i].type,
+                                emailVal,
+                                comingFormName
+                            ));
+                        }
+                    }
+
+                    if (selectedForm[0].form_rememberme == true) {
+                        form.appendChild(formLinkContainer);
+                    }
+                    if (selectedForm[0].form_rememberbrowser == true) {
+                        form.appendChild(formRememberBrowserContainer);
+                    }
+                    if (selectedForm[0].form_submit_text) {
+                        form.appendChild(formButtonContainer);
+                    }
+                    if (comingSData != null && comingFormName != "sso") {
+                        const formAddButtonContainer = document.createElement("div");
+                        formAddButtonContainer.className = "col-12 login-button-container addBtn";
+                        const addButtonOrText = document.createElement("span");
+                        addButtonOrText.textContent = "or";
+                        addButtonOrText.className = "orText";
+                        const addButton = document.createElement("button");
+                        addButton.textContent = "Login with SSO";
+                        addButton.id = "LoginWithSsoButton";
+                        addButton.setAttribute("data-sdatas", JSON.stringify(comingSData));
+                        addButton.className = "btn btn-secondary btn-lg w-100";
+                        addButton.setAttribute("type", "button");
+                        addButton.setAttribute("onclick", "fnSsoOnClick(this)");
+                        formAddButtonContainer.appendChild(addButtonOrText);
+                        formAddButtonContainer.appendChild(addButton);
+                        form.appendChild(formAddButtonContainer);
+                    }
+                    if (selectedForm[0].form_backlink == true) {
+                        form.appendChild(formBacklinkContainer);
+                    }
+
+                    $(".form-container").html("");
+                    $(".form-container").append(form);
+                    fnShowContainer();
+                    fnInputStyler();
+                    fnShowHidePasswordIcon();
+                    fnSubmitWorks(comingSData);
+
+                    if (comingFormName != "sso") {
+                        fnClearSso();
+                    }
+
+                    let logoArea;
+                    if (comingFormName == "sso" && comingSData && comingSData.logo) {
+                        logoArea = '';
+                    }
+                    else {
+                        logoArea = `<a onclick="fnLoadForm('welcome')" class="logo"></a>`;
+                    }
+                    $("#logo").html(logoArea);
+
+                    if (selectedForm[0].form_urlrewrite) {
+                        document.title = "Black Kite | " + selectedForm[0].form_title;
+                        window.history.pushState({ "form": comingFormName, "fData": comingFData, "sData": comingSData }, "", "/user/login/" + comingFormName);
+                    }
+
+                }
+
+            }, 500);
+
+        }
+
+        function fnSsoOnClick(button) {
+            let ssoButton = JSON.parse($(button).attr("data-sdatas"));
+            localStorage.setItem("ssoLoginData", $(button).attr("data-sdatas"));
+            window.location.href = ssoButton.url;
+        }
+
+        function fnClearSso() {
+            if (localStorage.getItem("ssoLoginData")) {
+                localStorage.removeItem("ssoLoginData");
+            }
+        }
+
+        function fnDrawInputs(label, label_Icon, id, type, emailVal, formName) {
+            const formInputContainer = document.createElement("div");
+            formInputContainer.className = "col-12 login-input-container form-floating";
+            const inputLabel = document.createElement("label");
+            //inputLabel.className = "form-label";
+            inputLabel.setAttribute("for", id);
+            inputLabel.textContent = label;
+            const labelIcon = document.createElement("i");
+            labelIcon.className = label_Icon;
+            inputLabel.insertBefore(labelIcon, inputLabel.firstChild);
+            const input = document.createElement("input");
+            input.setAttribute("type", type);
+            input.setAttribute("id", id);
+            input.setAttribute("name", id);
+            input.setAttribute("placeholder", label);
+            input.className = "form-control form-control-lg";
+            if (fnGetLoginUsername() != null && formName == "welcome" || formName == "loginwithpass") {
+                if (id == "email") {
+                    input.value = fnGetLoginUsername();
+                }
+            }
+            if (emailVal == null) {
+                input.setAttribute("autocomplete", "off");
+                input.setAttribute("readonly", "true");
+                input.setAttribute("onfocus", "this.removeAttribute('readonly');");
+            }
+            formInputContainer.appendChild(input);
+            formInputContainer.appendChild(inputLabel);
+            return formInputContainer;
+        }
+
+        function fnSetLoginUsername(username) {
+            localStorage.setItem("loginUserName", username);
+        }
+        function fnGetLoginUsername() {
+            return localStorage.getItem("loginUserName");
+        }
+
+        function fnSubmitWorks(comingSData) {
+
+            function fnFormProcessing(btnText) {
+                if ($("form").attr("disabled") == "disabled") {
+                    $("form").removeAttr("disabled");
+                    $("form").find("button[type='submit']").removeAttr("disabled");
+                    $("form").find("button[type='submit']").html(btnText);
+                } else {
+                    $("form").attr("disabled", "disabled");
+                    $("form").find("button[type='submit']").attr("disabled", "disabled");
+                    $("form").find("button[type='submit']").html("Please Wait...");
+                }
+            }
+
+            $("form").validate({
+                errorClass: 'is-invalid',
+                errorElement: 'div',
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element).addClass("invalid-feedback");
+                },
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 8,
+                        maxlength: 100
+                    },
+                    confirmpassword: {
+                        required: true,
+                        minlength: 8,
+                        maxlength: 100,
+                        equalTo: "#password"
+                    },
+                    code: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 6,
+                        number: true
+                    },
+                    name: {
+                        required: true
+                    }
+                },
+                messages: {
+                    email: "Please enter a valid email address",
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 8 characters long"
+                    },
+                    equalTo: "Please enter the same value again.",
+                    name: {
+                        required: "Please enter your name"
+                    }
+                }
+            });
+
+            $("form").submit(function (e) {
+
+                e.preventDefault();
+
+                let submittedForm = $(this);
+                let submittedFormBtnText = $(this).find("button[type='submit']").html();
+
+                if (submittedForm.attr("id") == "ssoForm") {
+                    window.location.href = comingSData.url;
+                } else {
+                    if (submittedForm.valid()) {
+
+                        if (submittedForm.attr("id") == "usernameForm" || submittedForm.attr("id") == "loginForm") {
+                            fnSetLoginUsername(submittedForm.find("input#email").val());
+                        }
+
+                        let registerTokenParam = "";
+                        if (submittedForm.attr("id") == "registerForm") {
+                            registerTokenParam = "&Token=" + fnGetQueryStringParameter("token");
+                        }
+
+                        var token = '<input name="__RequestVerificationToken" type="hidden" value="UMrN55eYhC8iDfJToVFuHumAxB1wbrllbZtH9GN2E5yOuz7uGxPxA4qfbcyzQ7Bo12GWN5y9nQiuVW90th5Wa45XeInSQflyy6STaVGZDw9Uh6h4GJTJGaAoGJBlpG7HxLgy1h1hNeUHzMOzJ6ofNw2" />';
+                        var tokenValue = $(token).val();
+                        $.ajax({
+                            type: submittedForm.attr("method"),
+                            dataType: "json",
+                            url: submittedForm.attr("action"),
+                            data: submittedForm.serialize() + "&returnUrl=" + sessionReturnUrl() + "&__RequestVerificationToken=" + tokenValue + registerTokenParam,
+                            success: function (result) {
+                                if (result) {
+                                    if (result.respType == "S" && submittedForm.attr("id") == "usernameForm") {
+                                        if (result.dynList[0].LoginStatusType == 0) {
+                                            if (result.dynList[0].SsoUrl) {
+                                                window.location.href = result.dynList[0].SsoUrl;
+                                            }
+                                        }
+                                        if (result.dynList[0].LoginStatusType == 1) {
+                                            fnLoadForm("loginwithpass", { email: submittedForm.find("input#email").val() }, null);
+                                        }
+                                        if (result.dynList[0].LoginStatusType == 2) {
+                                            fnLoadForm("loginwithpass", { email: submittedForm.find("input#email").val() }, { url: result.dynList[0].SsoUrl, networkName: result.dynList[0].CustomerName, logo: result.dynList[0].Logo });
+                                        }
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "loginForm") {
+                                        if (result.dynList[0].SignInStatus == 0) {
+                                            fnBKToast("success", "You have successfully logged in. Please wait...");
+                                            if (result.dynList[0].ReturnUrl != "") {
+                                                sessionStorage.removeItem("ReturnUrl");
+                                                window.location.href = result.dynList[0].ReturnUrl;
+                                            } else {
+                                                window.location.href = "/Dashboard"
+                                            }
+                                        }
+                                        if (result.dynList[0].SignInStatus == 1) {
+                                            fnLoadResponse("lockedout");
+                                        }
+                                        if (result.dynList[0].SignInStatus == 2) {
+                                            fnLoadForm("verify", { rememberme: result.dynList[0].RememberMe }, null);
+                                        }
+                                        if (result.dynList[0].SignInStatus == 3) {
+                                            fnLoadForm("2FA", { qrcode: result.dynList[1].QrCode, key: result.dynList[1].SecretKey, email: submittedForm.find("input#email").val() }, null);
+                                        }
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "verifyForm") {
+                                        if (result.dynList[0].SignInStatus == 0) {
+                                            fnBKToast("success", "You have successfully logged in. Please wait...");
+                                            if (result.dynList[0].ReturnUrl != "") {
+                                                sessionStorage.removeItem("ReturnUrl");
+                                                window.location.href = result.dynList[0].ReturnUrl;
+                                            } else {
+                                                window.location.href = "/Dashboard"
+                                            }
+                                        }
+                                        if (result.dynList[0].SignInStatus == 1) {
+                                            fnLoadResponse("lockedout");
+                                        }
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "forgotPasswordForm") {
+                                        fnLoadResponse("checkyourmail");
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "createPasswordForm") {
+                                        fnLoadResponse("successfullpasswordreset");
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "registerForm") {
+                                        fnBKToast("success", "You have successfully registered. You can start using the platform by logging in.");
+                                        fnLoadForm("welcome");
+                                    }
+                                    if (result.respType == "S" && submittedForm.attr("id") == "twoFactorAuthentication") {
+                                        fnLoadResponse("2FASuccess");
+                                    }
+                                    if (result.respType == "E") {
+                                        fnBKToast("danger", result.respDesc);
+                                    }
+                                }
+
+                            },
+                            beforeSend: function () {
+                                fnFormProcessing(submittedFormBtnText);
+                            },
+                            complete: function () {
+                                fnFormProcessing(submittedFormBtnText);
+                            },
+                            cache: false,
+                            error: function (err) {
+                                if (err) {
+                                    fnBKToast("danger", "Error");
+                                }
+                            }
+
+                        });
+                    }
+                }
+
+            });
+        }
+
+        function sessionReturnUrl() {
+            if (sessionStorage.getItem("ReturnUrl") != null) {
+                return encodeURIComponent(sessionStorage.getItem("ReturnUrl"));
+            } else {
+                return "/Dashboard";
+            }
+        }
+
+        function fnLoadForm(formName, fData, sData) {
+            fnDrawForm(formName, fData, sData)
+        }
+        function fnLoadResponse(responseName) {
+            fnDrawResponse(responseName)
+        }
+
+        function fnHideContainer() {
+            $(".form-content").css({
+                "opacity": "0",
+                "transform": "translateY(-2rem)"
+            });
+
+        }
+        function fnShowContainer() {
+            $(".form-content").css({
+                "opacity": "1",
+                "transform": "translateY(0rem)"
+            });
+        }
+
+        function decodeHtml(html) {
+            let txt = document.createElement("textarea");
+            txt.innerHTML = html;
+            return txt.value;
+        }
+
+        function fnGetUrl() {
+
+            let queryString = window.location.search;
+            let paramArr = queryString.slice(queryString.indexOf('?') + 1).split('&');
+            let hash = window.location.hash;
+            let params = {};
+            paramArr.map(function (param) {
+                const [key, val] = param.split('=');
+                if (key == "code") {
+                    params[key] = decodeURIComponent(queryString.slice(queryString.indexOf('&code=') + 6));
+                } else {
+                    params[key] = decodeURIComponent(val);
+                }
+                if (key == "ReturnUrl") {
+                    sessionStorage.setItem("ReturnUrl", decodeURIComponent(val) + hash);
+                }
+            });
+
+            let url = window.location.pathname;
+
+            url = url.split("/");
+            let pageName = url[2].toLowerCase();
+            let fPath = url[3];
+            let addPath = url[4];
+            if (fPath != undefined) {
+                fPath = fPath.toLowerCase();
+            }
+
+            let formName = fPath;
+
+
+            let sData = null
+
+
+
+            let ssoLoginCheck = false;
+            if (localStorage.getItem("ssoLoginData")) {
+                ssoLoginCheck = JSON.parse(localStorage.getItem("ssoLoginData"));
+            }
+
+            if (pageName == "login") {
+                let fPathControl = formList.filter(function (value) {
+                    return fPath == value.form_name;
+                });
+
+                if (fPathControl.length == 0) {
+                    formName = "welcome";
+                }
+                if (fPath == "sso") {
+                    if (addPath == undefined || addPath == "") {
+                        formName = "welcome";
+                    }
+                    if (typeof sData == "undefined") {
+                        formName = "welcome";
+                        sData = null;
+                    }
+                }
+                if (fPath == "verify") {
+                    formName = "welcome";
+                }
+                if (ssoLoginCheck) {
+                    if (fPath != "createpassword" && fPath != "forgotpassword") {
+                        formName = "sso";
+                        sData = ssoLoginCheck;
+                        let sDataUrlWithoutQueryString;
+                        if (sData.url.indexOf('?') == -1) {
+                            sDataUrlWithoutQueryString = sData.url;
+                        } else {
+                            sDataUrlWithoutQueryString = sData.url.slice(0, sData.url.indexOf('?'))
+                        }
+                        sData.url = sDataUrlWithoutQueryString + "?ReturnURL=" + sessionReturnUrl();
+                        localStorage.setItem("ssoLoginData", JSON.stringify(sData));
+                    }
+                }
+                if (formName == "createpassword") {
+                    if (params.userId && params.code) {
+                        fnLoadForm(formName, params, sData);
+                    } else {
+                        fnLoadForm("welcome", null, sData);
+                    }
+
+                } else {
+                    fnLoadForm(formName, null, sData);
+                }
+
+            }
+        }
+
+        $(document).ready(function () {
+            fnChangeTheme();
+            fnGetUrl();
+
+
+        });
+        window.onpopstate = function (e) {
+            if (e.state) {
+                fnLoadForm(e.state.form, e.state.fData, e.state.sData);
+            }
+        };
+
+        function fnGetQueryStringParameter(name) {
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(window.location.href);
+            if (!results) return '';
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+    </script>
+
+</body>
+
+</html>
