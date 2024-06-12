@@ -1,0 +1,105 @@
+﻿/* Tlacidla */
+
+.bm-btn {
+    background-color: #3D3973;
+    display: inline-block;
+    border-radius: 70px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .bm-btn span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: #ffffff;
+    }
+
+    .bm-btn:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .bm-btn:hover {
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.90);
+        text-decoration: none;
+    }
+
+    .bm-btn:active {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.bm-btn-big {
+    min-width: 100%;
+}
+
+.bm-btn-small {
+    width: 150px;
+}
+
+.btn-visitus {
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 70px;
+    border: 2px solid #3D3973;
+    color: #3D3973;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    opacity: 0.80;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+}
+
+    .btn-visitus span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        color: #3D3973;
+    }
+
+    .btn-visitus:hover {
+        border: 2px solid #3D3973;
+        background-color: #3D3973;
+        opacity: 1;
+        color: #fff;
+        box-shadow: 0px 0px 7px rgba(255, 250, 250, 0.90);
+    }
+
+        .btn-visitus:hover span {
+            color: #fff;
+        }
+
+    .btn-visitus:active {
+        transform: translate(2px, 2px);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+.btn-sendnewpassword {
+    font-size: 12px;
+    color: #806d3c;
+}
+
+    .btn-sendnewpassword:hover {
+        text-decoration: underline;
+        color: #806d3c;
+    }

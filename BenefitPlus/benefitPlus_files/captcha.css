@@ -1,0 +1,43 @@
+﻿/* CAPTCHA (Telerik) */
+
+.login-box-captcha {
+    display: block;
+    background-color: transparent;
+    border: none;
+}
+
+    .login-box-captcha .content {
+        background-color: #fff;
+        width: 280px;
+        height: 120px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .login-box-captcha .content img {
+        position: relative;
+        left: 15px;
+    }
+
+        .login-box-captcha .content input, .rcFocusTxt {
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #806d3c;
+            text-align: center;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+        .login-box-captcha .content label {
+            margin-top: 5px;
+            display: block;
+        }
+
+        .login-box-captcha .content span, label.labelCaptcha {
+            font-family: 'Fira Sans', sans-serif;
+            color: #806d3c;
+            font-weight: normal;
+        }
